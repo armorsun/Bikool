@@ -1,4 +1,4 @@
-package com.example.howard.navigaion;
+package com.example.bikool.bikool;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;

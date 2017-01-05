@@ -98,8 +98,9 @@
                 android:layout_centerHorizontal="false"
                 android:layout_marginLeft="50dp"
                 android:text="Choose Date"
-                app:layout_constraintLeft_toLeftOf="@id/layout_choosers"
-                tools:layout_editor_absoluteY="105dp" />
+                app:layout_constraintLeft_toLeftOf="parent"
+                tools:layout_editor_absoluteY="113dp"
+                android:layout_marginStart="50dp" />
 
             <Button
                 android:id="@+id/btn_timeChooser"
@@ -111,8 +112,8 @@
                 android:textAlignment="center"
                 android:textSize="14sp"
                 app:layout_constraintBaseline_toBaselineOf="@+id/btn_dateChooser"
-                app:layout_constraintRight_toRightOf="@id/layout_choosers"
-                tools:layout_editor_absoluteY="105dp" />
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginEnd="50dp" />
 
             <TextView
                 android:id="@+id/txtView_date"
@@ -128,8 +129,7 @@
                 android:textStyle="bold"
                 app:layout_constraintLeft_toLeftOf="@+id/btn_dateChooser"
                 app:layout_constraintTop_toBottomOf="@+id/btn_dateChooser"
-                tools:layout_editor_absoluteX="77dp"
-                tools:layout_editor_absoluteY="129dp" />
+                android:layout_marginStart="10dp" />
 
             <TextView
                 android:id="@+id/txtView_time"
@@ -142,8 +142,7 @@
                 android:textStyle="bold"
                 app:layout_constraintBaseline_toBaselineOf="@+id/txtView_date"
                 app:layout_constraintRight_toRightOf="@+id/btn_timeChooser"
-                tools:layout_editor_absoluteX="307dp"
-                tools:layout_editor_absoluteY="129dp" />
+                android:layout_marginEnd="25dp" />
 
         </android.support.constraint.ConstraintLayout>
 

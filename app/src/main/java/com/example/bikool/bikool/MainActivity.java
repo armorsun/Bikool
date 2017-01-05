@@ -1,5 +1,6 @@
 package com.example.bikool.bikool;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -14,11 +15,13 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import static android.app.PendingIntent.getActivity;
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     FloatingActionButton fab;
 
-    public FloatingActionButton getFab(){
+    public FloatingActionButton getFab() {
         return fab;
     }
 
@@ -30,7 +33,7 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        fab  = (FloatingActionButton) findViewById(R.id.fab);
+        fab = (FloatingActionButton) findViewById(R.id.fab);
         //fab.hide();
 
         fab.setOnClickListener(new View.OnClickListener() {
@@ -95,6 +98,9 @@ public class MainActivity extends AppCompatActivity
             fragmentManger.beginTransaction().replace(R.id.content_frame, new profileFragment()).commit();
         } else if (id == R.id.friends_list_layout) {
             fragmentManger.beginTransaction().replace(R.id.content_frame, new friendsFragment()).commit();
+        } else if (id == R.id.explore_layout) {
+            Intent intent = new Intent(getApplicationContext(), explore.class);
+            startActivity(intent);
         } else if (id == R.id.dashboard_layout) {
             fragmentManger.beginTransaction().replace(R.id.content_frame, new DashboardFragment()).commit();
         }
