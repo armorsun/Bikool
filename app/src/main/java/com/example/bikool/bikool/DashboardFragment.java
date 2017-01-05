@@ -1,6 +1,7 @@
 package com.example.bikool.bikool;
 
 import android.app.Fragment;
+import android.app.FragmentTransaction;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -61,6 +62,9 @@ public class DashboardFragment extends Fragment {
                 );
 
                 ImageButton start = (ImageButton) customView.findViewById(R.id.start);
+                ImageButton meetingPoint = (ImageButton) customView.findViewById(R.id.meetingpoint);
+                ImageButton stop = (ImageButton) customView.findViewById(R.id.stop);
+                ImageButton message = (ImageButton) customView.findViewById(R.id.message);
                 start.setOnClickListener(new View.OnClickListener(){
                     @Override
                     public void onClick(View v){
@@ -68,6 +72,26 @@ public class DashboardFragment extends Fragment {
                     }
                 });
                 popupWindow.showAtLocation(positionOfPopUpWindow, Gravity.CENTER, 0, 0);
+
+                message.setOnClickListener(new View.OnClickListener(){
+                    @Override
+                    public void onClick(View v){
+                        popupWindow.dismiss();
+                        final FragmentTransaction ft = getFragmentManager().beginTransaction();
+                        ft.replace(R.id.content_frame, new ChatFragment());
+                        ft.commit();
+                    }
+                });
+
+                stop.setOnClickListener(new View.OnClickListener(){
+                    @Override
+                    public void onClick(View v){
+                        popupWindow.dismiss();
+                        final FragmentTransaction ft = getFragmentManager().beginTransaction();
+                        ft.replace(R.id.content_frame, new profileFragment());
+                        ft.commit();
+                    }
+                });
             }
         });
         return myView;

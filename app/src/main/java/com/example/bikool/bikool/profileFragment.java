@@ -28,7 +28,6 @@ public class profileFragment extends Fragment {
         fab.show();
         fab.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(getActivity(),"Text!",Toast.LENGTH_SHORT).show();
                 final FragmentTransaction ft = getFragmentManager().beginTransaction();
                 ft.replace(R.id.content_frame, new ProfileEditorFragment());
                 ft.commit();

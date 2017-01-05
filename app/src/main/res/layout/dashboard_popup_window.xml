@@ -74,7 +74,8 @@
                     android:layout_toStartOf="@+id/stop"
                     android:layout_alignBottom="@+id/message"
                     android:layout_gravity="left|bottom"
-                    android:layout_marginBottom="48dp" />
+                    android:layout_marginBottom="48dp"
+                    android:id="@+id/meetingpoint" />
             </FrameLayout>
 
         </LinearLayout>
