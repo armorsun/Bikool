@@ -14,7 +14,6 @@
             android:layout_height="0dp"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Sunny"
-            android:id="@+id/textView7"
             android:layout_weight="1"
             android:gravity="center_horizontal"
             android:layout_marginTop="10dp" />
@@ -23,7 +22,6 @@
             android:layout_width="fill_parent"
             android:layout_height="0dp"
             android:src="@drawable/sunny"
-            android:id="@+id/imageView2"
             android:layout_weight="5"
             android:layout_gravity="center"
             android:scaleType="fitCenter" />
@@ -41,8 +39,7 @@
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:layout_marginTop="5dp"
-            android:background="#555555"
-            android:id="@+id/view1" />
+            android:background="#555555" />
 
         <LinearLayout
             android:orientation="horizontal"
@@ -56,7 +53,6 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Wrapped Distance"
-                android:id="@+id/textView8"
                 android:layout_weight="1"
                 android:layout_marginLeft="10dp" />
 
@@ -65,7 +61,6 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="1278km"
-                android:id="@+id/textView9"
                 android:layout_weight="1"
                 android:gravity="right"
                 android:layout_marginRight="10dp" />
@@ -82,7 +77,6 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Average Speed"
-                android:id="@+id/textView10"
                 android:layout_weight="1"
                 android:layout_marginLeft="10dp" />
 
@@ -91,7 +85,6 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="37.6km/h"
-                android:id="@+id/textView11"
                 android:layout_weight="1"
                 android:gravity="right"
                 android:layout_marginRight="10dp" />
@@ -109,7 +102,6 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Average Ranking"
-                android:id="@+id/textView12"
                 android:layout_weight="1"
                 android:layout_marginLeft="10dp" />
 
@@ -118,7 +110,6 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="3rd"
-                android:id="@+id/textView13"
                 android:gravity="right"
                 android:layout_weight="1"
                 android:layout_marginRight="10dp" />
@@ -129,7 +120,6 @@
             android:layout_height="2dp"
             android:layout_marginTop="5dp"
             android:background="#555555"
-            android:id="@+id/view2"
             android:layout_marginBottom="0dp" />
     </LinearLayout>
 
@@ -143,7 +133,6 @@
             android:layout_width="fill_parent"
             android:layout_height="0dp"
             android:src="@drawable/explore1"
-            android:id="@+id/imageView3"
             android:layout_weight="1"
             android:scaleType="centerCrop" />
 
@@ -158,7 +147,6 @@
                 android:layout_height="fill_parent"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="10/22"
-                android:id="@+id/textView14"
                 android:layout_weight="0.5"
                 android:layout_marginLeft="10dp" />
 
@@ -167,7 +155,6 @@
                 android:layout_height="fill_parent"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="A week end in Taichung"
-                android:id="@+id/textView15"
                 android:layout_weight="1.5"
                 android:gravity="right"
                 android:layout_marginRight="10dp" />

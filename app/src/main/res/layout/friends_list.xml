@@ -13,7 +13,6 @@
         android:layout_height="100dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Friends"
-        android:id="@+id/textView16"
         android:gravity="bottom|center_horizontal" />
 
     <TextView
@@ -21,12 +20,10 @@
         android:layout_height="38dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Favorites"
-        android:id="@+id/textView17"
         android:background="#d8e5f1" />
 
 
     <LinearLayout
-        android:id="@+id/friend1"
         android:layout_width="fill_parent"
         android:layout_height="50dp"
         android:padding="2dp" >
@@ -48,7 +45,6 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/friend2"
         android:layout_width="fill_parent"
         android:layout_height="50dp"
         android:padding="2dp" >
@@ -73,11 +69,9 @@
         android:layout_height="38dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Others"
-        android:id="@+id/textView18"
         android:background="#D8E5F1" />
 
     <LinearLayout
-        android:id="@+id/friend3"
         android:layout_width="fill_parent"
         android:layout_height="50dp"
         android:padding="2dp" >

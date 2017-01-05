@@ -2,7 +2,6 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_create_event"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.bikool.bikool.createEvent">
@@ -54,7 +53,6 @@
             tools:layout_editor_absoluteY="100dp" />
 
         <TextView
-            android:id="@+id/txtView_location"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/btn_locationChooser"
@@ -74,7 +72,6 @@
             android:text="Location" />
 
         <ImageButton
-            android:id="@+id/btn_save"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"

@@ -68,7 +68,6 @@
                     android:src="@drawable/meetingpoint"
                     android:background="@null"
                     android:scaleType="fitCenter"
-                    android:id="@+id/meetingPoint"
                     android:contentDescription=""
                     android:layout_marginLeft="40dp"
                     android:layout_marginRight="10dp"
