@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_create_event"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bikool.bikool.createEvent">
+
+    <RelativeLayout
+        android:layout_width="412dp"
+        android:layout_height="546dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <EditText
+            android:id="@+id/ediTxt_evtName"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentTop="false"
+            android:layout_alignTop="@+id/txtView_NewEvt"
+            android:layout_centerHorizontal="false"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="false"
+            android:layout_marginTop="50dp"
+            android:contextClickable="false"
+            android:inputType="textPersonName"
+            android:text="Event Name" />
+
+        <ImageButton
+            android:id="@+id/imgBtn_back_createEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="?android:attr/homeAsUpIndicator"
+            android:onClick="backToExplore" />
+
+        <TextView
+            android:id="@+id/txtView_NewEvt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imgBtn_back_createEvent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="80dp"
+            android:elevation="0dp"
+            android:text="New Event"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="175dp"
+            tools:layout_editor_absoluteY="100dp" />
+
+        <TextView
+            android:id="@+id/txtView_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btn_locationChooser"
+            android:layout_marginTop="50dp"
+            android:text="Taipei to Keelung"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_locationChooser"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/layout_choosers"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:text="Location" />
+
+        <ImageButton
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="0dp"
+            android:layout_marginRight="30dp"
+            app:srcCompat="@android:drawable/ic_menu_save"
+            android:onClick="saveAndBackToExplorer"/>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/layout_choosers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ediTxt_evtName"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="false"
+            android:layout_marginTop="60dp">
+
+            <Button
+                android:id="@+id/btn_dateChooser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="false"
+                android:layout_marginLeft="50dp"
+                android:text="Choose Date"
+                app:layout_constraintLeft_toLeftOf="@id/layout_choosers"
+                tools:layout_editor_absoluteY="105dp" />
+
+            <Button
+                android:id="@+id/btn_timeChooser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:duplicateParentState="true"
+                android:text="Choose Time"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/btn_dateChooser"
+                app:layout_constraintRight_toRightOf="@id/layout_choosers"
+                tools:layout_editor_absoluteY="105dp" />
+
+            <TextView
+                android:id="@+id/txtView_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="false"
+                android:layout_below="@+id/btn_dateChooser"
+                android:layout_centerInParent="false"
+                android:layout_marginLeft="10dp"
+                android:text="1/7 2017"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="@+id/btn_dateChooser"
+                app:layout_constraintTop_toBottomOf="@+id/btn_dateChooser"
+                tools:layout_editor_absoluteX="77dp"
+                tools:layout_editor_absoluteY="129dp" />
+
+            <TextView
+                android:id="@+id/txtView_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:text="7:30"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBaseline_toBaselineOf="@+id/txtView_date"
+                app:layout_constraintRight_toRightOf="@+id/btn_timeChooser"
+                tools:layout_editor_absoluteX="307dp"
+                tools:layout_editor_absoluteY="129dp" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

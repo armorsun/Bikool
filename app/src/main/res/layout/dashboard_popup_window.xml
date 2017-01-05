@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:src="@drawable/start"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:id="@+id/start"
+                android:layout_gravity="right"
+                android:contentDescription=""
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="10dp" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:layout_width="80dip"
+                    android:layout_height="80dip"
+                    android:src="@drawable/message"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/message"
+                    android:layout_gravity="bottom|right"
+                    android:contentDescription=""
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_above="@+id/stop"
+                    android:layout_toEndOf="@+id/stop"
+                    android:layout_marginBottom="48dp"
+                    android:baselineAlignBottom="false" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:layout_width="80dip"
+                    android:layout_height="80dip"
+                    android:src="@drawable/meetingpoint"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/meetingPoint"
+                    android:contentDescription=""
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toStartOf="@+id/stop"
+                    android:layout_alignBottom="@+id/message"
+                    android:layout_gravity="left|bottom"
+                    android:layout_marginBottom="48dp" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+            <ImageButton
+                android:layout_width="80dip"
+                android:layout_height="80dip"
+                android:src="@drawable/stop"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:id="@+id/stop"
+                android:contentDescription=""
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="145dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal" />
+        </FrameLayout>
+
+    </LinearLayout>
+</LinearLayout>
