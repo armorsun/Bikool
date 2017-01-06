@@ -33,8 +33,7 @@
             android:id="@+id/imgBtn_back_createEvent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="?android:attr/homeAsUpIndicator"
-            android:onClick="backToExplore" />
+            app:srcCompat="?android:attr/homeAsUpIndicator" />
 
         <TextView
             android:id="@+id/txtView_NewEvt"
@@ -70,17 +69,6 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="100dp"
             android:text="Location" />
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentEnd="false"
-            android:layout_alignParentRight="true"
-            android:layout_marginBottom="0dp"
-            android:layout_marginRight="30dp"
-            app:srcCompat="@android:drawable/ic_menu_save"
-            android:onClick="saveAndBackToExplorer"/>
 
         <android.support.constraint.ConstraintLayout
             android:id="@+id/layout_choosers"

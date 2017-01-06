@@ -101,8 +101,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.friends_list_layout) {
             fragmentManger.beginTransaction().replace(R.id.content_frame, new friendsFragment()).commit();
         } else if (id == R.id.explore_layout) {
-            Intent intent = new Intent(getApplicationContext(), explore.class);
-            startActivity(intent);
+            fragmentManger.beginTransaction().replace(R.id.content_frame, new explore()).commit();
         } else if (id == R.id.dashboard_layout) {
             fragmentManger.beginTransaction().replace(R.id.content_frame, new DashboardFragment()).commit();
         }
