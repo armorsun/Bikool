@@ -43,6 +43,7 @@
                 android:layout_weight="1">
 
                 <TextView
+                    android:id="@+id/dashboard_time"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:textAppearance="?android:attr/textAppearanceLarge"
@@ -52,6 +53,7 @@
                     android:layout_gravity="center" />
 
                 <TextView
+                    android:id="@+id/millimeter"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:textAppearance="?android:attr/textAppearanceLarge"
@@ -61,10 +63,11 @@
                     android:layout_gravity="center" />
 
                 <TextView
+                    android:id="@+id/kmh"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="32 Km/h"
+                    android:text="32 km/h"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:layout_gravity="center" />
@@ -82,6 +85,7 @@
                 android:layout_weight="1">
 
                 <TextView
+                    android:id="@+id/bpm"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:textAppearance="?android:attr/textAppearanceLarge"
@@ -91,6 +95,7 @@
                     android:layout_gravity="center" />
 
                 <TextView
+                    android:id="@+id/grade"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:textAppearance="?android:attr/textAppearanceLarge"
@@ -100,6 +105,7 @@
                     android:layout_gravity="center" />
 
                 <TextView
+                    android:id="@+id/rpm"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:textAppearance="?android:attr/textAppearanceLarge"

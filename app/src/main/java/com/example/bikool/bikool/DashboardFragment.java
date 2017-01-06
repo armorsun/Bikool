@@ -3,6 +3,7 @@ package com.example.bikool.bikool;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.content.Context;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.view.Gravity;
@@ -12,6 +13,7 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 /**
@@ -22,6 +24,8 @@ public class DashboardFragment extends Fragment {
     View myView;
     ImageButton btnPause;
     ImageButton btnProgress;
+    TextView time, millimeter, rpm, bpm, grade, kmh;
+
     boolean progressFlag = false;
     private PopupWindow popupWindow;
     private RelativeLayout positionOfPopUpWindow;
@@ -94,6 +98,26 @@ public class DashboardFragment extends Fragment {
                 });
             }
         });
+
+        Typeface bold = Typeface.createFromAsset(getActivity().getAssets(), "fonts/semibold.ttf");
+        Typeface regular = Typeface.createFromAsset(getActivity().getAssets(), "fonts/regular.ttf");
+        Typeface light = Typeface.createFromAsset(getActivity().getAssets(), "fonts/light.ttf");
+
+        time = (TextView)myView.findViewById(R.id.dashboard_time);
+        millimeter = (TextView)myView.findViewById(R.id.millimeter);
+        kmh = (TextView)myView.findViewById(R.id.kmh);
+        rpm = (TextView)myView.findViewById(R.id.rpm);
+        bpm = (TextView)myView.findViewById(R.id.bpm);
+        grade = (TextView)myView.findViewById(R.id.grade);
+
+        time.setTypeface(bold);
+        millimeter.setTypeface(bold);
+        kmh.setTypeface(bold);
+        rpm.setTypeface(bold);
+        bpm.setTypeface(bold);
+        grade.setTypeface(bold);
+
+
         return myView;
     }
 
