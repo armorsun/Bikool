@@ -25,6 +25,7 @@ public class profileFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
         myView = inflater.inflate(R.layout.personal_profile, container, false);
         FloatingActionButton fab = ((MainActivity)getActivity()).getFab();
+        fab.setImageResource(R.drawable.create);
         fab.show();
         fab.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {

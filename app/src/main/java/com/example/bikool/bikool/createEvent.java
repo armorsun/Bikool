@@ -37,6 +37,7 @@ public class createEvent extends Fragment implements View.OnClickListener {
         btnBack2CreateEvent = (ImageButton)myView.findViewById(R.id.imgBtn_back_createEvent);
         //btnSaveAndBack2CreateEvent = (ImageButton)myView.findViewById(R.id.save_and_back_to_explore);
         FloatingActionButton fab = ((MainActivity)getActivity()).getFab();
+        fab.setImageResource(R.drawable.save);
         fab.show();
         txtDate = (TextView) myView.findViewById(R.id.txtView_date);
         txtTime = (TextView) myView.findViewById(R.id.txtView_time);

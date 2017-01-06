@@ -38,6 +38,7 @@ public class explore extends Fragment {
 
         //btnCreateNewTrip = (ImageButton) myView.findViewById(R.id.create_new_trip);
         FloatingActionButton fab = ((MainActivity)getActivity()).getFab();
+        fab.setImageResource(R.drawable.add);
         fab.show();
         eventArray = new ArrayList<String>();
         eventArray.add("New Year Ride!! will start on 1/9 2017 at 6:00");

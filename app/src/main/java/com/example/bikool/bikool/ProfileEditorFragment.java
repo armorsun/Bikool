@@ -19,6 +19,7 @@ public class ProfileEditorFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
         myView = inflater.inflate(R.layout.personal_profile_editor, container, false);
         FloatingActionButton fab = ((MainActivity)getActivity()).getFab();
+        fab.setImageResource(R.drawable.save);
         fab.show();
         fab.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {

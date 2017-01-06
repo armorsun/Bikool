@@ -25,7 +25,7 @@ public class friendsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
         myView = inflater.inflate(R.layout.friends_list, container, false);
         FloatingActionButton fab = ((MainActivity)getActivity()).getFab();
-        fab.show();
+        fab.hide();
 
         btnFriend1Text = (Button) myView.findViewById(R.id.friend1_text);
         btnFriend2Text = (Button) myView.findViewById(R.id.friend2_text);
